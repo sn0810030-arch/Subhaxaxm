@@ -1,0 +1,393 @@
+{
+  "project": {
+    "name": "SUBHXAXM Board Master",
+    "short_name": "SUBHXAXM",
+    "version": "1.0.0",
+    "description": "Open-source Class 10 exam preparation platform with Claude AI",
+    "license": "MIT",
+    "target_board": "OAV Odisha",
+    "target_class": 10,
+    "target_percentage": 85
+  },
+  "ai_development_instructions": {
+    "role": "Senior Full-Stack Developer",
+    "instruction": "Build a complete, working, responsive Class 10 study website from this configuration. Preserve all specified features. Generate production-ready source code, not a static mockup.",
+    "requirements": [
+      "Use React and Vite for the frontend",
+      "Use Node.js and Express for the backend",
+      "Use the official Anthropic API for Claude",
+      "Keep the Anthropic API key on the server",
+      "Read the API key from environment variables",
+      "Use modular components and clean architecture",
+      "Make the application mobile-first",
+      "Include loading states and error handling",
+      "Use accessible HTML and keyboard navigation",
+      "Create a README with setup and deployment instructions",
+      "Test the production build",
+      "Never fabricate textbook content or examination results"
+    ]
+  },
+  "branding": {
+    "website_name": "SUBHXAXM",
+    "application_name": "SUBHXAXM Board Master",
+    "tagline": "Study Smart. Build Your Future.",
+    "logo_text": "S",
+    "footer_text": "Built by SUBHXAXM",
+    "theme": "dark",
+    "colors": {
+      "background": "#09090F",
+      "surface": "#151521",
+      "primary": "#8B5CF6",
+      "secondary": "#06B6D4",
+      "text": "#F8FAFC",
+      "muted": "#94A3B8",
+      "success": "#22C55E",
+      "danger": "#EF4444"
+    }
+  },
+  "technology": {
+    "frontend": "React",
+    "bundler": "Vite",
+    "language": "JavaScript",
+    "styling": "Tailwind CSS",
+    "backend": "Node.js",
+    "server": "Express",
+    "ai_provider": "Anthropic",
+    "database_initial": "LocalStorage",
+    "database_production": "Optional PostgreSQL",
+    "api_key_environment_variable": "ANTHROPIC_API_KEY"
+  },
+  "navigation": [
+    "Dashboard",
+    "AI Tutor",
+    "Subjects",
+    "Chapter Tracker",
+    "Study Planner",
+    "Question Bank",
+    "Mock Tests",
+    "Notes",
+    "Formula Library",
+    "Progress Analytics",
+    "Settings",
+    "About"
+  ],
+  "subjects": [
+    {
+      "id": "mathematics",
+      "name": "Mathematics",
+      "book": "NCERT Mathematics",
+      "priority": "high",
+      "chapters": [
+        "Real Numbers",
+        "Polynomials",
+        "Pair of Linear Equations in Two Variables",
+        "Quadratic Equations",
+        "Arithmetic Progressions",
+        "Triangles",
+        "Coordinate Geometry",
+        "Introduction to Trigonometry",
+        "Some Applications of Trigonometry",
+        "Circles",
+        "Areas Related to Circles",
+        "Surface Areas and Volumes",
+        "Statistics",
+        "Probability"
+      ]
+    },
+    {
+      "id": "science",
+      "name": "Science",
+      "book": "NCERT Science",
+      "priority": "high",
+      "chapters": [
+        "Chemical Reactions and Equations",
+        "Acids, Bases and Salts",
+        "Metals and Non-metals",
+        "Carbon and Its Compounds",
+        "Life Processes",
+        "Control and Coordination",
+        "How do Organisms Reproduce?",
+        "Heredity",
+        "Light – Reflection and Refraction",
+        "The Human Eye and the Colourful World",
+        "Electricity",
+        "Magnetic Effects of Electric Current",
+        "Our Environment"
+      ]
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "book": "India and the Contemporary World – II",
+      "chapters": [
+        "The Rise of Nationalism in Europe",
+        "Nationalism in India",
+        "The Making of a Global World",
+        "The Age of Industrialisation",
+        "Print Culture and the Modern World"
+      ]
+    },
+    {
+      "id": "geography",
+      "name": "Geography",
+      "book": "Contemporary India – II",
+      "chapters": [
+        "Resources and Development",
+        "Forest and Wildlife Resources",
+        "Water Resources",
+        "Agriculture",
+        "Minerals and Energy Resources",
+        "Manufacturing Industries",
+        "Lifelines of National Economy"
+      ]
+    },
+    {
+      "id": "political-science",
+      "name": "Political Science",
+      "book": "Democratic Politics – II",
+      "chapters": [
+        "Power Sharing",
+        "Federalism",
+        "Gender, Religion and Caste",
+        "Political Parties",
+        "Outcomes of Democracy"
+      ]
+    },
+    {
+      "id": "economics",
+      "name": "Economics",
+      "book": "Understanding Economic Development",
+      "chapters": [
+        "Development",
+        "Sectors of the Indian Economy",
+        "Money and Credit",
+        "Globalisation and the Indian Economy",
+        "Consumer Rights"
+      ]
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "books": [
+        {
+          "name": "First Flight",
+          "chapters": [
+            "A Letter to God",
+            "Nelson Mandela: Long Walk to Freedom",
+            "Two Stories about Flying",
+            "From the Diary of Anne Frank",
+            "Glimpses of India",
+            "Mijbil the Otter",
+            "Madam Rides the Bus",
+            "The Sermon at Benares",
+            "The Proposal"
+          ]
+        },
+        {
+          "name": "Footprints Without Feet",
+          "chapters": [
+            "A Triumph of Surgery",
+            "The Thief's Story",
+            "The Midnight Visitor",
+            "A Question of Trust",
+            "Footprints Without Feet",
+            "The Making of a Scientist",
+            "The Necklace",
+            "Bholi",
+            "The Book That Saved the Earth"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "odia",
+      "name": "Odia",
+      "book": "Configurable Odisha Board textbook",
+      "chapters": [],
+      "editable": true,
+      "note": "Add chapters from the current prescribed OAV/Odisha Board textbook."
+    },
+    {
+      "id": "information-technology",
+      "name": "Information Technology",
+      "book": "Configurable prescribed textbook",
+      "chapters": [],
+      "editable": true,
+      "note": "Add chapters according to the subject code and prescribed textbook."
+    }
+  ],
+  "claude_ai": {
+    "enabled": true,
+    "display_name": "SUBHXAXM AI",
+    "provider": "Anthropic",
+    "integration": "Official Anthropic Messages API",
+    "model": "Configure a currently supported Claude model",
+    "api_endpoint": "/api/chat",
+    "features": {
+      "chat": true,
+      "streaming": true,
+      "conversation_history": true,
+      "subject_specific_tutor": true,
+      "maths_step_by_step": true,
+      "science_numericals": true,
+      "chemistry_equations": true,
+      "biology_explanations": true,
+      "history_long_answers": true,
+      "geography_explanations": true,
+      "english_grammar": true,
+      "odia_tutoring": true,
+      "it_tutoring": true,
+      "mcq_generation": true,
+      "short_answer_generation": true,
+      "long_answer_generation": true,
+      "revision_plan_generation": true,
+      "answer_evaluation": true,
+      "difficulty_adjustment": true
+    },
+    "system_prompt": "You are SUBHXAXM AI, a patient Class 10 study tutor for students preparing for OAV Odisha examinations. Explain concepts in clear, age-appropriate language. Teach step by step. Help with Mathematics, Science, Social Science, English, Odia and Information Technology. Generate original practice questions, model answers, revision schedules and worked numerical examples. Distinguish verified textbook content from generated practice material. Never guarantee examination marks. Ask for clarification when the question or syllabus is unclear.",
+    "security": {
+      "api_key_environment_variable": "ANTHROPIC_API_KEY",
+      "expose_key_to_browser": false,
+      "expose_key_in_repository": false,
+      "validate_requests": true,
+      "limit_request_size": true,
+      "rate_limiting": true,
+      "handle_api_errors": true,
+      "never_log_secrets": true
+    }
+  },
+  "dashboard": {
+    "show_overall_progress": true,
+    "show_daily_tasks": true,
+    "show_pending_chapters": true,
+    "show_completed_chapters": true,
+    "show_study_streak": true,
+    "show_mock_test_scores": true,
+    "show_target_percentage": true,
+    "show_exam_countdown": true,
+    "allow_custom_exam_date": true
+  },
+  "chapter_tracker": {
+    "enabled": true,
+    "statuses": [
+      "Not Started",
+      "Learning",
+      "Revision",
+      "Completed"
+    ],
+    "allow_custom_chapters": true,
+    "allow_chapter_editing": true,
+    "allow_chapter_deletion": true,
+    "save_progress": true,
+    "calculate_completion_percentage": true
+  },
+  "study_planner": {
+    "enabled": true,
+    "default_duration_days": 15,
+    "daily_study_goal_hours": 8,
+    "adjustable_schedule": true,
+    "reschedule_incomplete_tasks": true,
+    "prioritize_weak_subjects": true,
+    "include_breaks": true,
+    "include_revision_days": true
+  },
+  "question_bank": {
+    "enabled": true,
+    "question_types": [
+      "MCQ",
+      "1-mark",
+      "2-mark",
+      "3-mark",
+      "5-mark",
+      "Case-based",
+      "Numerical",
+      "Diagram-based"
+    ],
+    "filters": [
+      "Subject",
+      "Book",
+      "Chapter",
+      "Difficulty",
+      "Question type"
+    ],
+    "show_explanations": true,
+    "label_generated_questions": true,
+    "label_verified_previous_year_questions": true
+  },
+  "mock_tests": {
+    "enabled": true,
+    "timed_exams": true,
+    "automatic_mcq_scoring": true,
+    "manual_long_answer_review": true,
+    "show_results": true,
+    "show_topic_accuracy": true,
+    "save_attempt_history": true,
+    "allow_custom_tests": true
+  },
+  "maths_and_science_tools": {
+    "formula_library": true,
+    "worked_numerical_examples": true,
+    "unit_conversion": true,
+    "chemical_equation_practice": true,
+    "diagram_revision": true,
+    "step_by_step_solutions": true,
+    "show_working_and_units": true
+  },
+  "productivity": {
+    "pomodoro": {
+      "enabled": true,
+      "focus_minutes": 25,
+      "short_break_minutes": 5,
+      "long_break_minutes": 15
+    },
+    "mistake_notebook": true,
+    "spaced_revision": true,
+    "daily_checklist": true,
+    "weekly_report": true
+  },
+  "storage": {
+    "initial_mode": "LocalStorage",
+    "save_chapter_progress": true,
+    "save_preferences": true,
+    "save_notes": true,
+    "save_chat_history_locally": true,
+    "warn_before_clearing_data": true,
+    "never_store_api_keys_locally": true
+  },
+  "open_source": {
+    "public_repository": true,
+    "repository_name": "subhxaxm-board-master",
+    "license": "MIT",
+    "required_files": [
+      "README.md",
+      "LICENSE",
+      "CONTRIBUTING.md",
+      ".gitignore",
+      ".env.example",
+      "package.json"
+    ],
+    "exclude_secrets": true,
+    "include_setup_instructions": true,
+    "include_deployment_instructions": true
+  },
+  "deployment": {
+    "frontend": "Vercel or another compatible host",
+    "backend": "Node.js-compatible hosting",
+    "require_https": true,
+    "require_environment_variables": true,
+    "health_check_endpoint": "/api/health"
+  },
+  "final_validation": [
+    "Validate the JSON before processing",
+    "Generate actual application source files",
+    "Install dependencies",
+    "Build the frontend",
+    "Test backend API routes",
+    "Verify Claude API error handling",
+    "Verify chapter progress persists after refresh",
+    "Verify all navigation routes",
+    "Verify mobile layout",
+    "Confirm no API secrets are committed",
+    "Document any unimplemented features honestly"
+  ]
+}

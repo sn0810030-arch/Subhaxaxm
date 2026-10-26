@@ -1,0 +1,6 @@
+{
+  "name": "SUBHXAXM Board Master",
+  "description": "Class 10 exam preparation platform with AI study tutor, syllabus tracker, question bank, formulas, mock tests, and exam study proposal builder.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
